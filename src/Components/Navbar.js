@@ -1,5 +1,6 @@
 import React from "react";
 import propTypes from "prop-types";
+
 function Navbarcode(props) {
   return (
     <nav
@@ -45,7 +46,9 @@ function Navbarcode(props) {
             </button>
           </form> */}
 
+          {/* Here I am adding a Toggle Button for Switching dark and Light mode */}
           <div
+            // This code here is checking if the mode == light if so then execute the dark or else execute light
             className={`form-check form-switch text-${
               props.mode === `light` ? `dark` : `light`
             }`}
